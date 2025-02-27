@@ -1,0 +1,15 @@
+---
+title: "Lab 3: COVID-19"
+subtitle: 'Ecosystem Science and Sustainability 330'
+author: 
+  - name: Avery Eastman
+    email: averyje@colostate.edu
+format: html
+execute: 
+  echo: true
+---
+
+```{r}
+library(tidyverse)
+```
+
