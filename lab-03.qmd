@@ -75,12 +75,12 @@ most_new_cases <- colorado_data |>
 
 ft_cumulative <- flextable(most_cumulative_cases) |>
   set_header_labels(county = "County", cumulative_cases = "Cumulative Cases") |>
-  set_caption(as_paragraph("Top 5 Counties in Colorado with the Most Cumulative COVID-19 Cases"))
+  add_header_lines("Top 5 Counties in Colorado with the Most Cumulative COVID-19 Cases")
 ft_cumulative
 
 ft_new_cases <- flextable(most_new_cases) |>
   set_header_labels(county = "County", new_cases = "New Cases") |>
-  set_caption(as_paragraph("Top 5 Counties in Colorado with the Most New COVID-19 Cases"))
+  add_header_lines("Top 5 Counties in Colorado with the Most New COVID-19 Cases")
 ft_new_cases
 ```
 
@@ -145,7 +145,7 @@ most_cumulative_cases_per_capita <- data_jan_1 |>
 
 ft_cumulative_per_capita <- flextable(most_cumulative_cases_per_capita) |>
   set_header_labels(county = "County", per_capita_cum_cases = "Per Capita Cumulative Cases") |>
-  set_caption("Top 5 Counties with the Most Cumulative COVID-19 Cases Per Captia on January 1st, 2021")
+  add_header_lines("Top 5 Counties with the Most Cumulative COVID-19 Cases Per Captia on January 1st, 2021")
 ft_cumulative_per_capita
 
 most_new_cases_per_capita <- data_jan_1 |>
@@ -155,7 +155,7 @@ most_new_cases_per_capita <- data_jan_1 |>
 
 ft_new_per_capita <- flextable(most_new_cases_per_capita) |>
   set_header_labels(county = "County", per_capita_new_cases = "Per Capita New Cases") |>
-  set_caption("Top 5 Counties with the Most New COVID-19 Cases Per Capita on January 1st, 2021")
+  add_header_lines("Top 5 Counties with the Most New COVID-19 Cases Per Capita on January 1st, 2021")
 ft_new_per_capita
 ```
 
