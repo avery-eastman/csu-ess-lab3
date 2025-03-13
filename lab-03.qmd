@@ -205,6 +205,7 @@ death_toll <- ggplot(high_covid_death_counties, aes(x = county, y = covid_death_
        y = "COVID Death Percentage")
 
 ggsave("images/death_toll.png")
+death_toll
 ```
 
 ## Question 6
@@ -235,6 +236,7 @@ new_cases_and_rolling_average <- ggplot(multi_state_data, aes(x = date)) +
   theme_minimal()
 
 ggsave("images/new_cases_and_rolling_average.png")
+new_cases_and_rolling_average
 ```
 #### The story of raw case counts can be misleading. To understand why, lets explore the cases per capita of each state. To do this, join the state COVID data to the population estimates and calculate the newcases/totalpopulation Additionally, calculate the 7-day rolling mean of the new cases per capita counts
 
@@ -273,6 +275,7 @@ per_capita_new_cases_and_rolling_average <- ggplot(per_capita_state_data, aes(x 
   theme_minimal()
 
 ggsave("images/per_capita_new_cases_and_rolling_average.png")
+per_capita_new_cases_and_rolling_average
 ```
 
 #### Briefly describe the influence scaling by population had on the analysis? Does it make some states look better? Some worse? How so?
@@ -332,6 +335,7 @@ weighted_mean_center <- ggplot(weighted_mean_center, aes(x = weighted_LON, y = w
   theme(legend.position = "bottom")
 
 ggsave("images/weighted_mean_center.png")
+weighted_mean_center
 ```
 
 #### In a few sentences, describe the movement of the COVID-19 weighted mean throughout the USA and possible drivers of its movement given your knowledge of the outbreak hot spots

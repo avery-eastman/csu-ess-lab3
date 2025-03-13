@@ -1,9 +1,0 @@
----
-title: "index"
-format: html
----
-
-about:
-  links:
-  - text Lab3
-    href: https://avery-eastman.github.io/csu-ess-lab3/
